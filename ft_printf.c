@@ -6,7 +6,7 @@
 /*   By: hsachie <hsachie@student.42.jp>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/23 17:35:14 by hsachie           #+#    #+#             */
-/*   Updated: 2026/05/25 20:08:30 by hsachie          ###   ########.fr       */
+/*   Updated: 2026/05/27 12:28:51 by hsachie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,16 @@ int	ft_printf(const char *format, ...)
 	i = 0;
 	count = 0;
 	va_start(ap, format);
-	while (format[i])
+	while (format)
 	{
-		if (format[i] == '%')
+		if (format == '%')
 		{
-			i++;
+			format 
+			
 		}
 	}
 }
+
+
+
+
