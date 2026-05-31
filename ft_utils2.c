@@ -1,39 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_utils.c                                         :+:      :+:    :+:   */
+/*   ft_utils2.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hsachie <hsachie@student.42.jp>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/25 19:50:12 by hsachie           #+#    #+#             */
-/*   Updated: 2026/05/28 12:23:46 by hsachie          ###   ########.fr       */
+/*   Created: 2026/05/31 18:31:43 by hsachie           #+#    #+#             */
+/*   Updated: 2026/05/31 20:52:38 by hsachie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c, int *count)
-{		
-	write(1, &c, 1);
-	*count = *count +1;
-}
+#include "ft_printf.h"
 
-void ft_putnbr(int n, int *count)
+void    ft_puthex_ul(unsigned long n, int *count)
 {
-	write (1, n, 1);
-	*count = *count +1
+	char *base;
+
+	if (*count == -1)
+		return ;
+	base = "0123456789abcdef";
+	if (n >= 16)
+		ft_puthex_ul(n / 16, count);
+	if (*count == -1)
+		return ;
+	ft_putchar(base[n % 16], count);
 }
 
-void	ft_putstr_fd(char *s, int fd)
+void    ft_putptr(unsigned long n, int *count)
 {
-	int	i;
-
-	i = 0;
-	while (s[i])
-	{
-		write(fd, &s[i], 1);
-		i++;
-	}
+	if (*count == -1)
+		return ;
+	ft_putstr("0x", count);
+	ft_puthex_ul(n, count);
 }
-
-
-
-

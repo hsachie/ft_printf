@@ -6,7 +6,7 @@
 #    By: hsachie <hsachie@student.42.jp>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/05/23 17:31:44 by hsachie           #+#    #+#              #
-#    Updated: 2026/05/25 12:27:00 by hsachie          ###   ########.fr        #
+#    Updated: 2026/05/31 21:05:11 by hsachie          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ CFLAGS      = -Wall -Wextra -Werror
 RM          = rm -f
 AR          = ar rcs
 
-SRCS        
+SRCS        = ft_printf.c ft_utils1.c ft_utils2.c
 
 OBJS        = $(SRCS:.c=.o)
 
