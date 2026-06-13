@@ -6,13 +6,13 @@
 /*   By: hsachie <hsachie@student.42.jp>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 19:50:12 by hsachie           #+#    #+#             */
-/*   Updated: 2026/05/31 20:52:34 by hsachie          ###   ########.fr       */
+/*   Updated: 2026/06/11 22:52:22 by hsachie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	ft_putchar(char c, int *count)
+void	ft_putchar(unsigned char c, int *count)
 {
 	if (*count == -1)
 		return ;

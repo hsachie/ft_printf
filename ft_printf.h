@@ -6,7 +6,7 @@
 /*   By: hsachie <hsachie@student.42.jp>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/23 15:41:29 by hsachie           #+#    #+#             */
-/*   Updated: 2026/05/31 20:52:21 by hsachie          ###   ########.fr       */
+/*   Updated: 2026/06/11 22:52:45 by hsachie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 # include <unistd.h>
 
 int     ft_printf(const char *format, ...);
-void    ft_putchar(char c, int *count);
+void    ft_putchar(unsigned char c, int *count);
 void    ft_putstr(char *s, int *count);
 void    ft_putnbr(int n, int *count);
 void    ft_putunsigned(unsigned int n, int *count);
