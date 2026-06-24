@@ -6,7 +6,7 @@
 /*   By: hsachie <hsachie@student.42.jp>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 19:50:12 by hsachie           #+#    #+#             */
-/*   Updated: 2026/06/11 22:52:22 by hsachie          ###   ########.fr       */
+/*   Updated: 2026/06/22 19:23:49 by hsachie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,7 +79,7 @@ void	ft_putunsigned(unsigned int n, int *count)
 
 void	ft_puthex(unsigned int n, int upper, int *count)
 {
-	char *base;
+	char	*base;
 
 	if (*count == -1)
 		return ;
